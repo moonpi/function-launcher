@@ -1,17 +1,4 @@
-codecademy-launcher
+sugarizer-launcher
 ===================
 
-Provides a desktop icon for launching Codecademy in the Chromium web browser on the Raspberry Pi.
-
-Installation
-------------
-
-```sh
-curl -L http://goo.gl/iFBzR | bash
-```
-
-or
-
-```sh
-wget --no-check-certificate http://goo.gl/iFBzR -O - | bash
-```
+Provides a desktop icon for launching Sugarizer in the Chromium web browser on the Raspberry Pi.
