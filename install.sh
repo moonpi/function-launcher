@@ -8,8 +8,8 @@
 #   
 # Usage:
 # 
-# curl -L https://github.com/KanoComputing/sugarizer-launcher/raw/master/install.sh | sh
-# wget --no-delete-certificate https://github.com/KanoComputing/sugarizer-launcher/raw/master/install.sh -O - | sh
+# curl -L https://github.com/punkbass/sugarizer-launcher/raw/master/install.sh | sh
+# wget --no-delete-certificate https://github.com/punkbass/sugarizer-launcher/raw/master/install.sh -O - | sh
 
 LAUNCHER_DIR="/opt/kano/sugarizer-launcher"
 
