@@ -51,7 +51,7 @@ sudo apt-get -y install git
 
 echo -e "\n[Sugarizer Launcher installer] Installing desktop icon."
 sudo mkdir -p $LAUNCHER_DIR
-sudo git clone git://github.com/KanoComputing/sugarizer-launcher.git $LAUNCHER_DIR
+sudo git clone git://github.com/punkbass/sugarizer-launcher.git $LAUNCHER_DIR
 sudo cp $LAUNCHER_DIR/sugarizer.desktop /usr/share/applications
 
 if test -e ~/Desktop/sugarizer.desktop; 
