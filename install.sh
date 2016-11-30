@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script to provide a one line install for a Codecademy launcher for the Raspberry Pi.
+# Script to provide a one line install for a Sugarizer launcher for the Raspberry Pi.
 # 
 # Motivating use case:
 # - To be able to provide consise and robust instructions for installing a basic
@@ -8,10 +8,10 @@
 #   
 # Usage:
 # 
-# curl -L https://github.com/KanoComputing/codecademy-launcher/raw/master/install.sh | sh
-# wget --no-delete-certificate https://github.com/KanoComputing/codecademy-launcher/raw/master/install.sh -O - | sh
+# curl -L https://github.com/KanoComputing/sugarizer-launcher/raw/master/install.sh | sh
+# wget --no-delete-certificate https://github.com/KanoComputing/sugarizer-launcher/raw/master/install.sh -O - | sh
 
-LAUNCHER_DIR="/opt/kano/codecademy-launcher"
+LAUNCHER_DIR="/opt/kano/sugarizer-launcher"
 
 delete()
 {  
@@ -37,31 +37,31 @@ sudo apt-get update
 
 if test -d $LAUNCHER_DIR;
 then
-  	echo  -e "\n[Codecademy Launcher installer] It looks like you've already got the Codecademy Launcher installed."
-  	echo  -e "\n[Codecademy Launcher installer] You'll need to remove $LAUNCHER_DIR to install."
-  	echo  -e "\nWould you like to remove [Codecademy Launcher installer] directory[Y/n]?"
+  	echo  -e "\n[Sugarizer Launcher installer] It looks like you've already got the Sugarizer Launcher installed."
+  	echo  -e "\n[Sugarizer Launcher installer] You'll need to remove $LAUNCHER_DIR to install."
+  	echo  -e "\nWould you like to remove [Sugarizer Launcher installer] directory[Y/n]?"
 	delete $LAUNCHER_DIR ;
 fi
 
-echo -e "[Codecademy Launcher installer] Installing Chromium ..."
+echo -e "[Sugarizer Launcher installer] Installing Chromium ..."
 sudo apt-get -y install chromium-browser
 
 echo  -e "\nInstalling git ...\n"
 sudo apt-get -y install git
 
-echo -e "\n[Codecademy Launcher installer] Installing desktop icon."
+echo -e "\n[Sugarizer Launcher installer] Installing desktop icon."
 sudo mkdir -p $LAUNCHER_DIR
-sudo git clone git://github.com/KanoComputing/codecademy-launcher.git $LAUNCHER_DIR
-sudo cp $LAUNCHER_DIR/codecademy.desktop /usr/share/applications
+sudo git clone git://github.com/KanoComputing/sugarizer-launcher.git $LAUNCHER_DIR
+sudo cp $LAUNCHER_DIR/sugarizer.desktop /usr/share/applications
 
-if test -e ~/Desktop/codecademy.desktop; 
+if test -e ~/Desktop/sugarizer.desktop; 
 then
-	echo -e "\n~/Desktop/codecademy.desktop file has existes!\nDo you want to remove it[y/n]?"
-	delete ~/Desktop/codecademy.desktop;	
+	echo -e "\n~/Desktop/sugarizer.desktop file has existes!\nDo you want to remove it[y/n]?"
+	delete ~/Desktop/sugarizer.desktop;	
 fi
 	
-sudo ln -s $LAUNCHER_DIR/codecademy.desktop ~/Desktop/codecademy.desktop
-sudo chmod +x ~/Desktop/codecademy.desktop
-sudo chown $(whoami) ~/Desktop/codecademy.desktop
+sudo ln -s $LAUNCHER_DIR/sugarizer.desktop ~/Desktop/sugarizer.desktop
+sudo chmod +x ~/Desktop/sugarizer.desktop
+sudo chown $(whoami) ~/Desktop/sugarizer.desktop
 sleep  2
 echo -e "\nComplete!\n"
