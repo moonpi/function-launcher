@@ -2,6 +2,6 @@
 Name=Sugarizer
 Comment=A taste of sugar on Kano.
 Exec=chromium --app=http://server.sugarizer.org/
-Icon=/opt/kano/codecademy-launcher/sugarizer-icon.png
+Icon=/opt/punkbass/sugarizer-launcher/sugarizer-icon.png
 Type=Application
 Categories=Application;Education;
