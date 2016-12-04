@@ -8,8 +8,8 @@
 #   
 # Usage:
 # 
-# curl -L https://github.com/punkbass/function-launcher/raw/master/install.sh | sh
-# wget --no-delete-certificate https://github.com/punkbass/function-launcher/raw/master/install.sh -O - | sh
+# curl -L https://github.com/coders4liberty/function-launcher/raw/master/install.sh | sh
+# wget --no-delete-certificate https://github.com/coders4liberty/function-launcher/raw/master/install.sh -O - | sh
 
 LAUNCHER_DIR="/opt/kano/function-launcher"
 
@@ -63,7 +63,7 @@ sudo apt-get -y install git
 
 echo -e "\n[Function Launcher installer] Installing desktop icon."
 sudo mkdir -p $LAUNCHER_DIR
-sudo git clone git://github.com/code4liberty/function-launcher.git $LAUNCHER_DIR
+sudo git clone git://github.com/coders4liberty/function-launcher.git $LAUNCHER_DIR
 sudo cp $LAUNCHER_DIR/function.desktop /usr/share/applications
 
 if test -e ~/Desktop/function.desktop; 
