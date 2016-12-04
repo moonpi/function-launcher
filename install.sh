@@ -35,8 +35,7 @@ echo -e "====================================\n"
 sleep 2
 sudo apt-get update 
 
-# Make NES directory
-sudo mkdir NES
+
 
 
 
@@ -48,8 +47,11 @@ then
 	delete $LAUNCHER_DIR ;
 fi
 
+# Make NES directory
+sudo mkdir NES
+
 # Download Function from NES World into NES folder
-sudo cd NES
+cd NES
 sudo wget http://www.nesworld.com/homebrew/function.zip
 cd ..
 
