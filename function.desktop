@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Function
 Comment=A Homebrew coding game for NES by Red Moon Games
-Exec=fceux open function.zip
+Exec=fceux open /opt/kano/function-launcher/function.zip
 Icon=/opt/kano/function-launcher/function-icon.png
 Type=Application
 Categories=Application;Education;
