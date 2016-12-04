@@ -63,7 +63,7 @@ sudo apt-get -y install git
 
 echo -e "\n[Function Launcher installer] Installing desktop icon."
 sudo mkdir -p $LAUNCHER_DIR
-sudo git clone git://github.com/punkbass/function-launcher.git $LAUNCHER_DIR
+sudo git clone git://github.com/code4liberty/function-launcher.git $LAUNCHER_DIR
 sudo cp $LAUNCHER_DIR/function.desktop /usr/share/applications
 
 if test -e ~/Desktop/function.desktop; 
