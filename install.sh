@@ -52,8 +52,7 @@ sudo mkdir NES
 
 # Download Function from NES World into NES folder
 
-sudo wget http://www.nesworld.com/homebrew/function.zip
-cp function.zip /home/NES/fuction.zip
+
 
 echo -e "[Function Launcher installer] Installing NES emulator FCEUX ..."
 sudo apt-get -y install fceux
@@ -63,6 +62,10 @@ sudo apt-get -y install git
 
 echo -e "\n[Function Launcher installer] Installing desktop icon."
 sudo mkdir -p $LAUNCHER_DIR
+
+sudo wget http://www.nesworld.com/homebrew/function.zip
+cp function.zip $LAUNCHER_DIR/fuction.zip
+
 sudo git clone git://github.com/coders4liberty/function-launcher.git $LAUNCHER_DIR
 sudo cp $LAUNCHER_DIR/function.desktop /usr/share/applications
 
