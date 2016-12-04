@@ -51,9 +51,9 @@ fi
 sudo mkdir NES
 
 # Download Function from NES World into NES folder
-cd NES
+
 sudo wget http://www.nesworld.com/homebrew/function.zip
-cd ..
+cp function.zip NES/fuction.zip
 
 echo -e "[Function Launcher installer] Installing NES emulator FCEUX ..."
 sudo apt-get -y install fceux
