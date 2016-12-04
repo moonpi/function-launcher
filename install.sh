@@ -64,7 +64,7 @@ echo -e "\n[Function Launcher installer] Installing desktop icon."
 sudo mkdir -p $LAUNCHER_DIR
 
 sudo wget http://www.nesworld.com/homebrew/function.zip
-cp function.zip $LAUNCHER_DIR/fuction.zip
+sudo cp function.zip $LAUNCHER_DIR/fuction.zip
 
 sudo git clone git://github.com/coders4liberty/function-launcher.git $LAUNCHER_DIR
 sudo cp $LAUNCHER_DIR/function.desktop /usr/share/applications
