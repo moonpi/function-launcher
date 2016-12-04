@@ -65,8 +65,8 @@ sudo mkdir -p $LAUNCHER_DIR
 sudo git clone git://github.com/coders4liberty/function-launcher.git $LAUNCHER_DIR
 sudo cp $LAUNCHER_DIR/function.desktop /usr/share/applications
 
-sudo wget http://www.nesworld.com/homebrew/function.zip
-sudo cp function.zip $LAUNCHER_DIR/fuction.zip
+#sudo wget http://www.nesworld.com/homebrew/function.zip
+#sudo cp function.zip $LAUNCHER_DIR/fuction.zip
 
 if test -e ~/Desktop/function.desktop; 
 then
